@@ -6,7 +6,5 @@ import RepoPage from './containers/RepoPage'
 
 export default (
   <Route path="/" component={App}>
-    <Route path="/fakepage"
-           component={FakePage} />
   </Route>
 )

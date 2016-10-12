@@ -8,10 +8,16 @@ import DevTools from '../containers/DevTools'
 export default class App extends React.Component {
   render() {
     return (
-      <div>
-        <AddTodo />
-        <VisibleTodoList />
-        <Footer />
+      <div className='container'>
+        <div className='row'>
+          <AddTodo />
+        </div>
+        <div className='row'>
+          <VisibleTodoList />
+        </div>
+        <div className='row'>
+          <Footer />
+        </div>
       </div>
     )
   }
