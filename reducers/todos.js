@@ -1,4 +1,5 @@
 import Immutable from 'immutable';
+import _ from 'lodash';
 
 const todo = (state, action) => {
   switch (action.type) {
@@ -32,6 +33,8 @@ const todos = (state = [], action) => {
       return state.map(t =>
         todo(t, action)
       )
+    case 'REMOVE_TODO':
+      return state.filter(t => t.id !== action.id);
     default:
       return state
   }
