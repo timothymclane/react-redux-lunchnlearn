@@ -13,10 +13,10 @@ export default class App extends React.Component {
           <AddTodo />
         </div>
         <div className='row'>
-          <VisibleTodoList />
+          <Footer />
         </div>
         <div className='row'>
-          <Footer />
+          <VisibleTodoList />
         </div>
       </div>
     )

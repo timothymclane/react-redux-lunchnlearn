@@ -14,6 +14,14 @@ export const removeTodo = (id) => {
   }
 }
 
+export const undoTodo = () => ({
+  type: 'UNDO_TODO'
+})
+
+export const redoTodo = () => ({
+  type: 'REDO_TODO'
+})
+
 export const setVisibilityFilter = (filter) => {
   return {
     type: 'SET_VISIBILITY_FILTER',
